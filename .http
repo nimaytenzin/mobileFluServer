@@ -2,6 +2,11 @@ POST http://localhost:3000/postLocation HTTP/1.1
 content-type: application/json
 
 {
-    "name": "sample",
+    "lat": 29.544,
+    "long": 89.85585,
+    "driverName":"Kado",
+    "healthOfficial": "Dorji Khandu",
+    "healthOfficalContactNumber": 17695612,
+    "driverNumber": 17689982,
     "time": "Wed, 21 Oct 2015 18:27:50 GMT"
 }

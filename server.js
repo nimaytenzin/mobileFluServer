@@ -29,10 +29,9 @@ app.post('/send-notification', (req, res) => {
 });
 
 app.post('/postLocation', (req,res) => {
-    console.log(data)
-    const data = {lat: req.body}
-    socketIO.emit('location', data);
-    res.send(data)
+    console.log(req.body)
+    const data = req.body
+    io.emit('fluClinicDetials', data);
 })
 
 
